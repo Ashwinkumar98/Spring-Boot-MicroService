@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: consultation-service
   cache:
     cache-names:
     - patientCache
