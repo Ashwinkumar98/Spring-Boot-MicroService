@@ -6,6 +6,7 @@ management:
       exposure:
         include:
         - info
+        - health
         - refresh
         
 info:
