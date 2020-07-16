@@ -1,0 +1,32 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: PATIENT-SERVICE
+        uri: lb://PATIENT-SERVICE
+        predicates:
+        - path=/patient/**
+        
+      - id: DOCTOR-SERVICE
+        uri: lb://DOCTOR-SERVICE
+        predicates:
+        - path=/doctor/**
+        
+      - id: DIAGNOSIS-SERVICE
+        uri: lb://DIAGNOSIS-SERVICE
+        predicates:
+        - path=/diagnosis/**
+        
+      - id: CONSULTATION-SERVICE
+        uri: lb://CONSULTATION-SERVICE
+        predicates:
+        - path=/consultation/**
+        
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      
+server:
+  port: 8765
+      
