@@ -38,7 +38,7 @@ server:
 
 turbine:
   app-config: patient-service,doctor-service,diagnosis-service
-  cluster-name-expression: new String("default)
+  cluster-name-expression: new String("default")
 
 eureka:
   client:
