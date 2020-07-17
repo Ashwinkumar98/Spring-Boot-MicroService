@@ -35,7 +35,11 @@ management:
         
 server:
   port: 0
-  
+
+turbine:
+  app-config: patient-service,doctor-service,diagnosis-service
+  cluster-name-expression: new String("default)
+
 eureka:
   client:
     serviceUrl:
