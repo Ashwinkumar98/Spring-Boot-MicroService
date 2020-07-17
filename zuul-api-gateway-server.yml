@@ -13,7 +13,12 @@ zuul:
     consultation-service:
       path: /consultation/**
       service-id: CONSULTATION-SERVICE
-      
+
+info:
+  app:
+    name: api gateway server
+    description: Api gateway for all service
+
 server:
   port: 8765
     
